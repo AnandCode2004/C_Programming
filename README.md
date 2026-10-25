@@ -1,4 +1,3 @@
-
 # C Programming
 
 ## About
@@ -16,12 +15,13 @@ To practice C programming, strengthen logical thinking, and improve coding skill
 
 ## Topics
 
-• Programming based on basic algorithmic strategy 
-• Programming based on Selection technique 
-• Programming based on Iteration technique 
-• Programming based on Functional approach 
-• Programming based on Numbers
+- Programs based on basic algorithmic strategy
+- Programs based on Selection technique
+- Programs based on Iteration technique
+- Programs based on Functional approach
+- Programs based on Numbers
 
 ## Language
 
 - C
+
