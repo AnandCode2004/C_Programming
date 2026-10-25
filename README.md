@@ -16,11 +16,11 @@ To practice C programming, strengthen logical thinking, and improve coding skill
 
 ## Topics
 
-- Programming fundamentals
-- Conditional statements
-- Loops
-- Functions
-- Number-based programs
+• Programming based on basic algorithmic strategy 
+• Programming based on Selection technique 
+• Programming based on Iteration technique 
+• Programming based on Functional approach 
+• Programming based on Numbers
 
 ## Language
 
