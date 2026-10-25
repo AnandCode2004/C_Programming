@@ -21,12 +21,7 @@ To practice C programming, strengthen logical thinking, and improve coding skill
 - Programs based on Functional approach
 - Programs based on Numbers
 
-## Language
-
-- C
-
-
-  ## How to Use
+## How to Use
 
 1. Browse the `Assignments/` or `Problem-Solving/` folder.
 2. Open the required assignment or day folder.
@@ -34,19 +29,31 @@ To practice C programming, strengthen logical thinking, and improve coding skill
 4. Compile and run the program using a C compiler, such as GCC.
 5. Test the program with different inputs to understand its output.
 
-## Example
+## Example: Compile and Run a C Program
 
-&#x20;open command prompt using ( Win + R) go to the path where your where your program is save then write this command 
+1. Open the **Command Prompt**.
+2. Press `Win + R`, type `cmd`, and press **Enter**.
+3. Navigate to the folder where your C program is saved using the `cd` command.
+4. Compile the program using GCC:
 
-```bash
-gcc program.c -o Myexe
-```
+   ```bash
+   gcc program.c -o Myexe
+   ```
 
-Then Enter
+5. Run the compiled program:
 
-```bash
-Myexe
-```
+   ```bash
+   Myexe
+   ```
 
+   On Windows, you can also run it using:
 
+   ```bash
+   Myexe.exe
+   ```
 
+**Note:** Replace `program.c` with your actual C filename. Make sure GCC is installed and configured in your system's PATH.
+
+## Language
+
+- C
