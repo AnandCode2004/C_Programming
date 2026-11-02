@@ -17,6 +17,11 @@
 
 void DisplayMultiples(int iNo)
 {
+    if (iNo < 0)
+    {
+        iNo = -iNo;
+    }
+    
     int iCnt = 0;
     int iMulti = 1;
     for(iCnt = 1; iCnt <= 5; iCnt++)

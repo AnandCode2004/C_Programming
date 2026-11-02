@@ -1,10 +1,16 @@
 // input = 4
 // ouput = 4  8  12  16   20
+
 #include<stdio.h>
 #include<stdlib.h>
 
 void DisplayMultiples(int iNo)
 {
+    if (iNo < 0)
+    {
+        iNo = -iNo;
+    }
+
     int iCnt = 0;
     
     for(iCnt = 1; iCnt <= 5; iCnt++)
@@ -14,6 +20,7 @@ void DisplayMultiples(int iNo)
         
     }
 }
+
 int main()
 {
     int iValue = 0;
