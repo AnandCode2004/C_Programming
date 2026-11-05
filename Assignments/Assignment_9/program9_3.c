@@ -13,20 +13,23 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 int EvenFactorial(int iNo)
-{
-    int iCnt = 0;
-    int iFact = 1;
-
+{   
+    // iNo = abs(iNo);
     if(iNo < 0)
     {
         iNo = -iNo;
     }
 
-    for(iCnt = 2; iCnt <= iNo; iCnt = iCnt + 2)
-    {
-        iFact = iFact * iCnt;
-    }
+    int iCnt = 0;
 
+    int iFact = 1;
+    for(iCnt = 1; iCnt <= iNo; iCnt++)
+    {   
+        if(iCnt % 2 == 0)
+        {
+             iFact = iFact * iCnt;
+        }
+    }
     return iFact;
 }
 
@@ -42,7 +45,7 @@ int main()
 
     printf("Even Factorial of number is: %d\n", iRet);
 
-    return 0;
+    return EXIT_SUCCESS;
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -23,12 +23,13 @@ void DisplayNumberLine(int iNo)
     }
 
     int iCnt = 0;
-    for (iCnt = -iNo; iCnt <= iNo; iCnt++)
+    for (iCnt = -iNo; iCnt <= 0; iCnt++)  // O(N)
     {
         printf("%d\t" , iCnt);
     }
     printf("\n");  /* create one line space below output*/
 }
+/*Time Complexity : O(N)*/
 
 int main()
 {

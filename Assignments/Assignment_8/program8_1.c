@@ -26,7 +26,7 @@ void Number(int iNo)
     {
         printf("Small\n");
     } 
-    else if (iNo >= 50 && iNo <= 100)
+    else if ((iNo >= 50) && (iNo <= 100))
     {
         printf("Medium\n");
     }

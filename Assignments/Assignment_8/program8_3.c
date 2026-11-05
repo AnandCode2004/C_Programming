@@ -1,26 +1,23 @@
-/*
-   Write a program to find Factorail of a number
-*/
+/*Write a program to find factorail of give number.*/
+
 #include<stdio.h>
 #include<stdlib.h>
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ///
-///     Function Name    : Factorail
+///     Function Name    : DisplayNumber
 ///     Input            : Integer
 ///     Output           : Integer
-///     Description      : Write a program to find Factorail of a number
-///     Date             : 02/10/2026
+///     Description      : Write a program to find factorail of give number
+///     Date             : 31/10/2026
 ///     Author           : Anand Rashtrapal Ingle
 ///
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 int Factorail(int iNo)
 {
-    iNo = abs(iNo);
-    
-    int iFact = 1, iCnt = 0;
-
+    int iCnt = 0;
+    int iFact = 1;
     for(iCnt = 1; iCnt <= iNo; iCnt++)
     {
         iFact = iFact * iCnt;
@@ -30,16 +27,34 @@ int Factorail(int iNo)
 
 int main()
 {
-    int iValue = 0, iRet = 0;
-    printf("Enter number\n");
+    int iValue = 0 , iRet = 0;
 
-    if (scanf("%d" ,&iValue) != 1)
+    printf("Enter Number : \n");
+    if((scanf("%d", &iValue) != 1))
     {
         printf("invalid input\n");
+        return EXIT_FAILURE;
     }
 
     iRet = Factorail(iValue);
-    printf(" Factorial of %d is : %d\n" , iValue, iRet);
+    printf("Factorial is : %d\n" , iRet);
 
     return EXIT_SUCCESS;
 }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///     
+///                Testing 
+///
+///    ------------------------------------
+///     Input                      Ouput
+///    ------------------------------------
+///      5                          120
+///     -5                          120 
+///      4                          24
+///                             
+///      
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+

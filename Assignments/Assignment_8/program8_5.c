@@ -1,56 +1,56 @@
+/*Write a program which accept number from user and display its reverse table */
+
 #include<stdio.h>
-#include<stdlib.h>
+#include<stdlib.h>  
+
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ///
-///     Function Name    : TableRev
+///     Function Name    : DisplayNumber
 ///     Input            : Integer
-///     Output           : None (Displays multiplication table in reverse)
-///     Description      : Accept a number and display its table in reverse order
-///     Date             : 02/11/2026
+///     Output           : display reverse table
+///     Description      : Write a program to find factorail of give number
+///     Date             : 31/10/2026
 ///     Author           : Anand Rashtrapal Ingle
 ///
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-void TableRev(int iNo)
+void Table(int iNo)
 {
     int iCnt = 0;
-
-    if(iNo < 0)
-    {
-        iNo = abs(iNo);
-    }
+    int Table = 1;
 
     for(iCnt = 10; iCnt >= 1; iCnt--)
     {
-        printf("%d\t", iNo * iCnt);
+        Table = iNo * iCnt;
+        printf("%d\t" , Table);
     }
-
-    printf("\n");
 }
 
 int main()
-{
+{ 
     int iValue = 0;
+    printf("Enter number:\n");
+    scanf("%d" , &iValue);
 
-    printf("Enter number: ");
-    scanf("%d", &iValue);
+    Table(iValue);
 
-    TableRev(iValue);
-
-    return 0;
+    return EXIT_SUCCESS;
 }
 
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///
-///                         Testing
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///     
+///                Testing 
 ///
 ///    ------------------------------------
-///     Input                      Output
+///     Input                      Ouput
 ///    ------------------------------------
-///      2                         20  18  16  14  12  10  8  6  4  2
-///      5                         50  45  40  35  30  25  20  15  10  5
-///     -5                         50  45  40  35  30  25  20  15  10  5
-///
-/// 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///      2                          2 4 6 8 10 12 14 16 18 20
+///      5                          5 10 15 20 25 30 35 40 45 50
+///     -5                          5 10 15 20 25 30 35 40 45 50
+///                             
+///      
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

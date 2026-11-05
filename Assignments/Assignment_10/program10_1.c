@@ -1,49 +1,34 @@
-#include<stdio.h>
+/*
+Write a program which accept radius of circle from user and calculate its Area. 
+consider value of PI as 3.14. (Area = PI * Radius * Radius) 
+*/
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
-///
-///     Function Name    : CircleArea
-///     Input            : Float
-///     Output           : Double (Returns area of circle)
-///     Description      : Accept radius and calculate area of circle
-///     Date             : 02/11/2026
-///     Author           : Anand Rashtrapal Ingle
-///
-////////////////////////////////////////////////////////////////////////////////////////////////////
+#include<stdio.h>
+#include<stdlib.h>
 
 double CircleArea(float fRadius)
 {
-    double dArea = 0.0;
+    double PI = 3.14;
+    double darea = 0.0;
 
-    dArea = 3.14 * fRadius * fRadius;
+    darea = PI * fRadius * fRadius;
 
-    return dArea;
+    return darea;
 }
 
 int main()
 {
-    float fValue = 0.0;
+    float fValue = 0.0f;
     double dRet = 0.0;
 
-    printf("Enter radius: ");
-    scanf("%f", &fValue);
+    printf("Enter radius : \n");
+    if(scanf("%f",&fValue) !=1)
+    {
+        printf("inValid inPut\n");
+    }
 
     dRet = CircleArea(fValue);
+    printf("Area of Cirle is : %.4f\n", dRet);
 
-    printf("Area of circle is: %.4lf\n", dRet);
-
-    return 0;
+    return EXIT_SUCCESS;
 }
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-///
-///                         Testing
-///
-///    ------------------------------------
-///     Input                      Output
-///    ------------------------------------
-///      5.3                       88.2026
-///     10.4                       339.6224
-///
-/// 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
